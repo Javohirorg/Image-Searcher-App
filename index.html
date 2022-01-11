@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Image searcher app</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <span class="logo">
+                Image searcher app.
+            </span>
+            <button class="about-site" onclick="
+            const about = document.querySelector('.about');
+            about.style.transform = `translateY(-100vh)`;
+            ">about this app</button>
+        </nav>
+        <h2 style="text-align: center; margin-bottom: 20px;">Categories</h2>
+        <section class="categories">
+            <button>Home</button>
+            <button>Alone</button>
+            <button>Boy</button>
+            <button>Dog</button>
+            <button>Love</button>
+            <button>Shelby</button>
+            <button>Other</button>
+        </section>
+        <div class="main">
+            <div class="search-bar">
+                <input type="search" placeholder="Search images..." id="search" />
+            </div>
+            <h1 style="text-align: center;" class="help" >Please search categories...</h1>
+            <div class="main-box"></div>
+        </div>
+    </div>
+    <div class="about">
+        <img src="./images/cros.png" alt="close" onclick="
+        const about = document.querySelector('.about');
+        about.style.transform = `translateY(0)`;
+        ">
+        <span>
+            <h1>This is Image searcher app.</h1>
+            <h3>
+                This app created by Murzayev Javohir and Javohir Original team.
+            </h3>
+            <span>
+                follow us:
+                <a href="http://javohirdev.vercel.app" target="_blank" >Personal web site</a>
+                <a href="http://github.com/Javohirorg" target="_blank" >GitHub</a>
+                <a href="http://www.instagram.com/devjavohir" target="_blank" >Instagram</a>
+                <a href="http://t.me/JavohirOriginal" target="_blank" >Telegram</a>
+            </span>
+        </span>
+    </div>
+    <div class="version">
+        <h1>Page Error</h1>
+        <h2>This web site only desktop, laptop, tablet version</h2>
+    </div>
+    <div class="load">
+        <div class="load-box-1"></div>
+        <div class="load-box-2"></div>
+        <div class="load-box-3"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
